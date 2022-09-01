@@ -76,26 +76,31 @@ password_confirmation
 type : admin	JSON
 Inserted user information
 Along with token
+
 2	Login (both user & admin)
 http://127.0.0.1:8000/api/login	POST	email
 password	JSON
 Logged in user with token
 (copy and paste token to authorization you got here)
+
 3	Loan List (both user & admin)
 http://127.0.0.1:8000/api/loan	GET	token (at authorization)	JSON
 List of Loans 
 (for user – his loans
 for admin- all loans)
+
 4	Request Loan (user)
 http://127.0.0.1:8000/api/loan	POST	loan_amount
 loan_term
 token (at authorization)	JSON
 Inserted loan information
+
 5	Fetch Loan information (user & admin)
 http://127.0.0.1:8000/api/loan/<loan_id>
 
 eg: http://127.0.0.1:8000/api/loan/1	GET	token (at authorization)	JSON
 Loan Information
+
 6	Update loan (user & admin)
 http://127.0.0.1:8000/api/loan/<loan_id>
 
@@ -108,11 +113,13 @@ token (at authorization)
 Status – “APPROVED”
 token (at authorization)	JSON
 Update status
+
 7	Fetch Repayment (user & admin)
 http://127.0.0.1:8000/api/repayment/<repayment_id>
 
 eg: http://127.0.0.1:8000/api/ repayment /1	GET	token (at authorization)	JSON
 Repayment Information
+
 8	Add Repayment (user)
 
 http://127.0.0.1:8000/api/repayment/<repayment_id>
@@ -125,6 +132,7 @@ Update status
 
 
 Application working flow
+
 1.	Admin registers
 2.	User Registers
 3.	User login
@@ -160,5 +168,7 @@ b.	update – to update repayment
 
 
 Run 
+
 php artisan db: create loan_db
+
 php artisan migrate
