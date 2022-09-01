@@ -1,5 +1,6 @@
 Features completed
 •	User Register – Admin Register
+
 •	User login – Admin Login
 •	User request loan
 •	User List his loans
