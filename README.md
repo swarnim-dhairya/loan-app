@@ -3,32 +3,53 @@ Features completed
 •	User Register – Admin Register
 
 •	User login – Admin Login
+
 •	User request loan
+
 •	User List his loans
+
 •	User View specific loan
+
 •	User can view specific repayment
+
 •	Admins approve loan
-•	Admin list all loans 
+
+•	Admin list all loans
+
 •	Admin view specific loan
+
 •	Admin can view specific repayment
 
 Validation added
+
 •	Login returns a Token, which need to be added to all further requests to access APIs
+
 •	User cannot see other user loans
+
 •	User cannot approve his loans
+
 •	Admin cannot update other information of loan except status
+
 •	Admin cannot update repayment status
+
 •	Loan amount and loan term cannot be zero
 
 
 Request Type and Response Formats
 Note :  
+
 •	Used Passport package of Laravel for API development, it manages token for user specific sessions
+
 o	Referred this link - https://blog.logrocket.com/laravel-passport-a-tutorial-and-example-build/
+
 •	POSTMAN can be used to interact with API
+
 o	Add header – “Accept – application/json” for all requests
+
 o	Token – to be added at Authorization as a bearer token
+
 o	All data should be sent to be added under Body as a x-www-form-urlencoded options (key value pairs)
+
 o	HTTP methods can be switched from dropdown
 
 
